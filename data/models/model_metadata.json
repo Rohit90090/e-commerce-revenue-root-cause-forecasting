@@ -1,0 +1,26 @@
+{
+  "best_model": "Linear Regression",
+  "train_rows": 118,
+  "test_rows": 30,
+  "train_end": "2014-08-17",
+  "test_start": "2014-08-24",
+  "best_model_mae": 3081.7613750084856,
+  "best_model_rmse": 5167.20491205402,
+  "best_model_r2": 0.3534507956739924,
+  "best_model_mape": 10.109784266719583,
+  "features": [
+    "trend",
+    "week_sin",
+    "week_cos",
+    "revenue_lag_1",
+    "revenue_lag_2",
+    "revenue_lag_4",
+    "revenue_roll_4",
+    "revenue_roll_8",
+    "sessions_lag_1",
+    "orders_lag_1",
+    "conversion_lag_1",
+    "aov_lag_1",
+    "refunds_lag_1"
+  ]
+}

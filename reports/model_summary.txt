@@ -1,0 +1,8 @@
+Revenue Forecast Model Comparison
+
+            model         MAE         RMSE        R2      MAPE
+Linear Regression 3081.761375  5167.204912  0.353451 10.109784
+    Random Forest 9520.593552 11693.277299 -2.311027 31.854397
+Gradient Boosting 9539.329164 11619.003264 -2.269098 32.135266
+
+Selected model: Linear Regression

@@ -1,0 +1,12 @@
+CREATE INDEX IF NOT EXISTS idx_sessions_created_at ON website_sessions(created_at);
+CREATE INDEX IF NOT EXISTS idx_sessions_user ON website_sessions(user_id);
+CREATE INDEX IF NOT EXISTS idx_sessions_source_campaign ON website_sessions(utm_source, utm_campaign);
+CREATE INDEX IF NOT EXISTS idx_pageviews_session ON website_pageviews(website_session_id);
+CREATE INDEX IF NOT EXISTS idx_pageviews_created_at ON website_pageviews(created_at);
+CREATE INDEX IF NOT EXISTS idx_orders_session ON orders(website_session_id);
+CREATE INDEX IF NOT EXISTS idx_orders_created_at ON orders(created_at);
+CREATE INDEX IF NOT EXISTS idx_orders_user ON orders(user_id);
+CREATE INDEX IF NOT EXISTS idx_order_items_order ON order_items(order_id);
+CREATE INDEX IF NOT EXISTS idx_order_items_product ON order_items(product_id);
+CREATE INDEX IF NOT EXISTS idx_refunds_order_item ON order_item_refunds(order_item_id);
+CREATE INDEX IF NOT EXISTS idx_refunds_order ON order_item_refunds(order_id);
